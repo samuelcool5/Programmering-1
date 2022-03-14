@@ -6,6 +6,21 @@ import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 frame = None
 
+def lost_health(img):
+    Currenthealth = 100
+    txt = pytesseract.image_to_string(img)
+    health = int(txt)
+    if txt == " ":
+        return False
+    if health < Currenthealth:
+        Currenthealth = health
+        return True
+    return False
+    
+    
+    
+
+
 while True:
     img = ImageGrab.grab(bbox=(0, 900, 1100, 1100)) #x, y, w, h
     img_np = np.array(img)
