@@ -17,7 +17,6 @@ def lost_health(img):
         Currenthealth = health
         print(Currenthealth)
         return True
-    Currenthealth = health
     return False
     
 def gained_health(img):
@@ -27,7 +26,8 @@ def gained_health(img):
     if health_gain > Currenthealth:
         Currenthealth = health_gain
         print(Currenthealth)
-    Currenthealth = health_gain
+        return True
+    return False
 
 while True:
     img = ImageGrab.grab(bbox=(100, 700, 700, 900)) #x, y, w, h
@@ -39,7 +39,11 @@ while True:
         break
     try:
         lost_health(frame)
+        gained_health(frame)
+        Currenthealth = int(pytesseract.image_to_string(frame))
     except ValueError:
         pass
+    
 
 
+    
