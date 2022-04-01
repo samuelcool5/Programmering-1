@@ -18,3 +18,4 @@ In order to run the code a few library installations must be done:
 4. Arduino-Python3 Command API
    - pip install arduino-python3 
 ### Change imageGrab box resulotion:
+![imagegrab parameters](https://user-images.githubusercontent.com/97743581/161279814-f64810ad-ae20-49ec-b2d7-ba1706be73c1.jpg)
