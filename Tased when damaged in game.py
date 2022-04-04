@@ -4,6 +4,7 @@ import cv2
 from PIL import ImageGrab
 import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+from Arduino import Arduino
 frame = None
 Currenthealth = 100
 
