@@ -7,7 +7,7 @@ Check [Text detection.py](https://github.com/samuelcool5/Programmering-1/blob/ma
 
 ## Running *Tased when damaged in game.py*
 
-### In order to run the code a few library installations must be done:
+### In order to run the code a few Modules installations must be done:
 1. OpenCV
    - pip install opencv-python
 2. pytesseract
