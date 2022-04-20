@@ -56,6 +56,7 @@ while True:
     except ValueError:
         pass
     
-
+    if lost_health(frame) == True:
+        taser(13)    
 
     
