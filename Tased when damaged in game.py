@@ -32,7 +32,7 @@ def gained_health(img):
     return False
 
 def taser(pin):
-    board = Arduino(baud=115200)
+    board = Arduino("9600")
     board.pinMode(pin, "OUTPUT")
     board.digitalWrite(pin,"HIGH")
     print(board.digitalRead(pin))
@@ -55,8 +55,8 @@ while True:
         Currenthealth = int(pytesseract.image_to_string(frame))
     except ValueError:
         pass
+
     
-    if lost_health(frame) == True:
-        taser(13)    
+  
 
     
