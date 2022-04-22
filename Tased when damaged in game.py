@@ -41,7 +41,7 @@ def taser(pin):
 board = Arduino(baud=9600) 
 board.pinMode(13, "OUTPUT")
 while True:
-    img = ImageGrab.grab(bbox=(100, 700, 700, 900)) #x, y, w, h
+    img = ImageGrab.grab(bbox=(160, 970, 220, 1010)) #x, y, w, h
     img_np = np.array(img)
     frame = cv2.cvtColor(img_np, cv2.COLOR_BGR2GRAY)
     cv2.imshow("frame", frame)
@@ -59,6 +59,5 @@ while True:
         pass
     
     
-  
 
     
