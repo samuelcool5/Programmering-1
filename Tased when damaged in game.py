@@ -34,7 +34,7 @@ def gained_health(img):
 def taser(pin):
     board.digitalWrite(pin,"HIGH")
     print(board.digitalRead(pin))
-    time.sleep(2)
+    time.sleep(0.5)
     board.digitalWrite(pin,"LOW")
     print(board.digitalRead(pin))
 
