@@ -20,3 +20,15 @@ Check [Text detection.py](https://github.com/samuelcool5/Programmering-1/blob/ma
    - load sketch onto arduino, [MORE INFO](https://github.com/mkals/Arduino-Python3-Command-API)
 ### Change imageGrab box resulotion:
 ![imagegrab parameters](https://user-images.githubusercontent.com/97743581/161279814-f64810ad-ae20-49ec-b2d7-ba1706be73c1.jpg)
+
+## The taser part:
+![IMG_20220516_101028](https://user-images.githubusercontent.com/97743581/168549416-000924b5-8769-4eb7-b175-9fa1ae23ea10.jpg)
+### Components
+- Arduino Uno
+- Relay
+   - Gnd to Gnd
+   - Vcc to 5V
+   - In1 to Pin13
+- Battery holder
+- Taser module from Electric Fly Swatter
+   - Wire to relay instead of button
